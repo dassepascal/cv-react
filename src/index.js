@@ -1,12 +1,14 @@
 import { StrictMode } from 'react';
 import ReactDom from 'react-dom';
-
+import { BrowserRouter } from 'react-router-dom';
 import App from 'src/components/App';
 
 const rootReactElement = (
   <StrictMode>
 
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
 
   </StrictMode>
 );
