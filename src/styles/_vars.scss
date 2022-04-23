@@ -1,0 +1,27 @@
+:root {
+  --white: #ddd;
+  --black: #333;
+  --color-1: #2a1d52;
+  --color-2: #6c77f4;
+  --color-3: rgb(99, 164, 233);
+  --color-4: #4fedd2;
+  --color-5: #36d0ea;
+
+  --borderRaduis: 25px;
+  --shadow: 0 1px 3px #333;
+  --minHeight: 95vh;
+
+}
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
