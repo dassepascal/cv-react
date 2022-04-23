@@ -1,5 +1,6 @@
 // == Import
 import { Routes, Route } from 'react-router-dom';
+import { ArrowRight } from 'react-bootstrap-icons';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home';
 import Knowledges from '../pages/Knowledges';
@@ -11,6 +12,9 @@ import './style.scss';
 function App() {
   return (
     <div className="app">
+
+
+
       <Routes>
 
         <Route path="/" element={<Home />} />

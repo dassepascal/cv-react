@@ -45,6 +45,9 @@
           ["src", "./src"],
           ["app", "./src"]
         ]
+      },
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   }
