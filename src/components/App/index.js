@@ -1,6 +1,5 @@
 // == Import
 import { Routes, Route } from 'react-router-dom';
-import { ArrowRight } from 'react-bootstrap-icons';
 import Contact from '../pages/Contact';
 import Home from '../pages/Home';
 import Knowledges from '../pages/Knowledges';
@@ -19,7 +18,7 @@ function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/competences" element={<Knowledges />} />
-        <Route path="/porfolio" element={<Porfolio />} />
+        <Route path="/portfolio" element={<Porfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Notfound />} />
       </Routes>

@@ -23,20 +23,20 @@ export default function Navigation() {
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/" activeClassname="navactive">
+            <NavLink exact to="/competences" activeClassname="navactive">
               <i className="fa-solid fa-mountain" />
 
               <span>Compétences</span>
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/" activeClassname="navactive">
+            <NavLink exact to="/portfolio" activeClassname="navactive">
               <i className="fas fa-images" />
               <span>Porfolio</span>
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/" activeClassname="navactive">
+            <NavLink exact to="/contact" activeClassname="navactive">
               <i className="fas fa-address-book" />
               <span>Contact</span>
             </NavLink>
