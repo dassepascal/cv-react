@@ -1,7 +1,7 @@
+/* eslint-disable quotes */
 import './style.scss';
 import { NavLink } from 'react-router-dom';
 import portrait from '../media/portrait.jpg';
-
 
 export default function Navigation() {
   return (
@@ -9,7 +9,7 @@ export default function Navigation() {
       <div className="id">
         <div className="idContent">
           <img src={portrait} alt="portrait" />
-          <h3>Dasse Pascal</h3>
+          <h3>Pascal Dasse</h3>
         </div>
       </div>
 
@@ -24,7 +24,7 @@ export default function Navigation() {
             </NavLink>
           </li>
           <li>
-            <NavLink exact to="/competences" activeClassName="navActive">
+            <NavLink activeClassName="active" exact to="/competences">
               <i className="fa-solid fa-mountain" />
 
               <span>Compétences</span>
@@ -60,9 +60,10 @@ export default function Navigation() {
             <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-codepen " /></a>
           </li>
         </ul>
-      </div>
-      <div className="signature">
-        <p>fromScratch - 2022</p>
+
+        <div className="signature">
+          <p>from Dasse - 2022</p>
+        </div>
       </div>
     </div>
   );

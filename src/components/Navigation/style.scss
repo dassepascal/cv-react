@@ -3,6 +3,7 @@
    font-family: 'Nova Round',
      cursive;
    height: 100%;
+   width: 264px;
    min-height: var(--minHeight);
    border-radius: var(--borderRaduis);
    position: relative;
@@ -58,11 +59,28 @@
 
          &:hover i {
            transform: translate(3px, 3px);
+
          }
 
          a {
            color: var(--color-5);
          }
+
+         .navActive {
+           color: red;
+         }
+
+         i {
+           position: absolute;
+           font-size: 0.95rem;
+           transform: translateY(3px);
+           transition: .2s ease;
+         }
+
+         span {
+           margin-left: 2.7rem;
+         }
+
 
 
        }
@@ -70,10 +88,110 @@
    }
  }
 
- .navigation ul li a .active {
-   color: red;
+ .socialNetwork {
+   grid-area: 3;
+
+   ul {
+     display: flex;
+     width: 264px;
+     padding: 0 14px;
+     justify-content: space-between;
+
+     li {
+       font-size: 1.5rem;
+       background: var(--color-5);
+       color: var(--color-1);
+       border-radius: 50%;
+       transition: 0.3s;
+       padding: .5rem .8rem;
+       cursor: pointer;
+
+       a:visited {
+         color: var(--color-1);
+       }
+
+       &:nth-child(1) {
+         padding: .5rem .85rem;
+       }
+
+       &:nth-child(4) {
+         padding: .5rem .75rem;
+       }
+
+       &:hover {
+         bottom: var(--color-4);
+       }
+
+     }
+   }
+
+   .signature {
+     margin-top: 2rem;
+     text-align: center;
+     letter-spacing: .1rem;
+     font-size: .7rem;
+
+     p {
+       color: var(--color-5);
+
+       &:hover {
+         color: var(--color-4);
+       }
+     }
+   }
+
  }
 
- a .navActive {
-   background: red;
+ @media screen and (max-width: 850px) {
+   .sidebar {
+     display: flex;
+     min-height: 50px;
+     margin-bottom: .2rem;
+     width: 100%;
+
+
+     .id,
+     .socialNetwork {
+       display: none;
+     }
+
+     .navigation {
+       width: 100%;
+       padding: .1rem 1rem;
+
+
+
+       ul {
+         display: flex;
+         justify-content: space-between;
+
+         span {
+           margin-left: 1.5rem !important;
+         }
+
+       }
+     }
+   }
+ }
+
+ @media screen and (max-width:580px) {
+   .sidebar {
+     ul {
+       justify-content: space-around !important;
+
+       li {
+         padding: 1rem 0 !important;
+       }
+
+       i {
+         font-size: 1.4rem !important;
+         transform: translateY(-3px) !important;
+       }
+
+       span {
+         display: none;
+       }
+     }
+   }
+
  }
