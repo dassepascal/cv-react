@@ -1,0 +1,83 @@
+.home {
+
+  .homeContent {
+    background: linear-gradient(115deg, #2a1d52 50%, transparent 100%);
+    min-height: var(--minHeight);
+    width: 100%;
+    min-height: 500px;
+    border-radius: var(--borderRaduis);
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: inherit;
+      // background: url('../../media/bigGates.jpg') no-repeat center/cover;
+      z-index: -1;
+      filter: brightness(20%);
+    }
+
+    .content {
+      position: absolute;
+      top: 20%;
+      left: 13%;
+      font-family: 'Nova Round',
+        cursive;
+      ;
+
+      h1 {
+        font-size: 5rem;
+        font-family: 'Dosi'sans-serif;
+        color: var(--color-5);
+        text-transform: uppercase;
+        text-shadow: 3px 6px 2px var(--black);
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        padding: 1.5rem 0 7rem;
+        color: var(--color-3);
+        text-shadow: 1px 4px 1px var(--black);
+      }
+
+      .pdf {
+        a {
+          font-size: 1.5rem;
+          background: var(--color-3);
+          padding: 1rem 2rem;
+          border-radius: var(--borderRaduis);
+          box-shadow: 0 5px 1px rgb(15, 15, 15);
+          transition: 0.2s ease;
+
+          &:hover {
+            background: var(--color-4);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .homeContent {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .homeContent {
+    &:after {
+      // background: url('../../media/bigGates.jpg') no-repeat 60% 50%/cover !important;
+    }
+
+    h1 {
+      font-size: 3rem !important;
+    }
+
+    h2 {
+      font-size: 1.8rem !important;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 import './style.scss';
 import { NavLink } from 'react-router-dom';
-import portrait from '../media/portrait.jpg';
+import portrait from '../../media/portrait.jpg';
 
 export default function Navigation() {
   return (
