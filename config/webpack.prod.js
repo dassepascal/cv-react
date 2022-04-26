@@ -5,11 +5,31 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { BundleStatsWebpackPlugin } = require('bundle-stats-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPDFPlugin = require('html-webpack-pdf-plugin');
+
+
 
 module.exports = merge(common, {
   mode: 'production',
   devtool: false,
   plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      inject: 'body',
+      writePDF: {
+        format: 'Letter',
+        margin: {
+          top: '1in',
+          left: '1in',
+          right: '1in',
+          bottom: '1in',
+        },
+      },
+    }),
+    new HtmlWebpackPDFPlugin(),
+
+    // MiniCssExtractPlugin
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
     }),
@@ -27,7 +47,7 @@ module.exports = merge(common, {
           },
           {
             loader: 'css-loader',
-            options: { 
+            options: {
               sourceMap: true,
               importLoaders: 3,
               url: {

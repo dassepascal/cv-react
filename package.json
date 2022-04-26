@@ -44,12 +44,13 @@
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0",
+    "webpack-markdown-pdf-plugin": "^0.0.15",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^17.0.2",
     "react-redux": "^8.0.0",
     "react-router-dom": "^6.3.0",

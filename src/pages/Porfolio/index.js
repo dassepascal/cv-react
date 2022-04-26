@@ -1,4 +1,4 @@
-import Navigation from '../../Navigation';
+import Navigation from '../../components/Navigation';
 import './style.scss';
 
 export default function Porfolio() {
